@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/CaptainSaveACode/actions.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "YourNameOrOrganization",
+  "author": "CaptainSaveACode",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.0.0",

@@ -1,7 +1,7 @@
 import * as core from '@actions/core';
 import moment from 'moment';
 
-async function run() {
+function run() {
   try {
     const timeFormat = core.getInput('timeformat') || 'YYYYMMDD-HHmmss';
     core.debug(`Using date format: ${timeFormat}`);
