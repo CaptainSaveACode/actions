@@ -1,5 +1,5 @@
 {
-  "name": "current-time-string",
+  "name": "timestamp",
   "version": "1.0.0",
   "private": true,
   "description": "Returns the current time using the provided format string",
@@ -15,7 +15,8 @@
   "keywords": [
     "actions",
     "node",
-    "setup"
+    "time",
+    "timestamp"
   ],
   "author": "CaptainSaveACode",
   "license": "MIT",
