@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
-  "version": "0.0.0",
+  "name": "current-time-string",
+  "version": "1.0.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Returns the current time using the provided format string",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
