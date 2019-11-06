@@ -1,16 +1,15 @@
 import * as core from '@actions/core';
-import {wait} from './wait'
+import moment from 'moment';
 
 async function run() {
   try {
-    const ms = core.getInput('milliseconds');
-    console.log(`Waiting ${ms} milliseconds ...`)
+    const timeFormat = core.getInput('timeformat') || 'YYYYMMDD-HHmmss';
+    core.debug(`Using date format: ${timeFormat}`);
 
-    core.debug((new Date()).toTimeString())
-    await wait(parseInt(ms, 10));
-    core.debug((new Date()).toTimeString())
+    const date = moment().format(timeFormat);
+    core.debug(date);
 
-    core.setOutput('time', new Date().toTimeString());
+    core.setOutput('time', date);
   } catch (error) {
     core.setFailed(error.message);
   }
